@@ -88,23 +88,23 @@ CNN은 자동으로 필터(커널)의 값을 업데이트하며 학습
 예: 총 데이터 10,000개 / Batch Size = 100 → 한 Epoch에 100번 학습
 
 ## 🔄 요약 흐름 다이어그램
-[Input Image]
-     ↓
-[Conv → ReLU → Pooling] × N
-     ↓
-[Flatten]
-     ↓
-[Fully Connected Layers]
-     ↓
-[Softmax]
-     ↓
-[Loss Calculation]
-     ↓
-[Backpropagation]
-     ↓
-[Weight Update]
-     ↓
-Repeat for many Epochs
+[Input Image]  
+     ↓  
+[Conv → ReLU → Pooling] × N  
+     ↓  
+[Flatten]  
+     ↓  
+[Fully Connected Layers]  
+     ↓  
+[Softmax]  
+     ↓  
+[Loss Calculation]  
+     ↓  
+[Backpropagation]  
+     ↓  
+[Weight Update]  
+     ↓  
+Repeat for many Epochs  
 
 ## 🧠 CNN이 '학습'하는 방식이란?
 CNN은 사람이 직접 특징을 지정하지 않아도, 스스로 '좋은 특징'을 찾아냅니다.
