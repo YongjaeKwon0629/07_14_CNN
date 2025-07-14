@@ -54,3 +54,29 @@ class SimpleCNN(nn.Module):
         x = self.fc2(x)
         return x
 ```          
+## ✅ 모델 요약
+
+| 계층           | 출력 크기        | 설명                         |
+| ------------ | ------------ | -------------------------- |
+| 입력           | (1, 28, 28)  | 흑백 이미지                     |
+| Conv1 + ReLU | (32, 28, 28) | 32개 필터 적용                  |
+| MaxPool1     | (32, 14, 14) | 절반으로 축소                    |
+| Conv2 + ReLU | (64, 14, 14) | 더 많은 특징 추출                 |
+| MaxPool2     | (64, 7, 7)   | 또 한 번 축소                   |
+| Flatten      | (3136,)      | Fully Connected로 넘기기 위한 변환 |
+| FC1          | (128,)       | 특징 종합                      |
+| FC2          | (10,)        | 숫자 0\~9 확률 출력              |
+
+## 🚀 다음 단계: 학습시키기 (Training)
+위 모델을 학습시키기 위해선 다음 요소들이 필요합니다:
+
+-  손실 함수: nn.CrossEntropyLoss()
+
+-  옵티마이저: torch.optim.Adam(model.parameters(), lr=0.001)
+
+-  데이터셋: torchvision.datasets.MNIST
+
+-  훈련 루프: for epoch in range(n_epochs): ...
+
+### 📝 Tip: 이 코드는 구조가 단순하면서도 실제 분류 작업에 매우 강력한 기본기를 제공해 줍니다.
+꼭 MNIST 외에도 다양한 28x28 흑백 이미지 분류에 응용할 수 있습니다!
