@@ -34,19 +34,20 @@ CNN은 이미지와 같은 시각 데이터를 처리하는 데 뛰어난 성능
 - 예시 모델: **SCNN (Spatial CNN)**, **Ultra Fast Lane Detection**
 - 활용 목적: 차량의 위치 및 주행 가능 경로 판단
 
-```python
+```
 # 간단한 예시 코드 (OpenCV + CNN 기반 차선 분류기)
 lane_features = cnn_model.predict(input_image)
 plot_lane(lane_features)
-3.2 객체 인식 (Object Detection)
+````
+
+### 3.2 객체 인식 (Object Detection)
 도로 위 보행자, 차량, 자전거 등의 객체 탐지
 
 사용 모델: YOLO (You Only Look Once), Faster R-CNN, SSD
 
 중요성: 충돌 회피 및 경로 계획에 핵심적 역할
 
-python
-코드 복사
+```
 # YOLOv5를 통한 객체 인식 예시
 results = yolo_model(input_image)
 results.print()
@@ -57,9 +58,9 @@ results.show()
 사용 데이터셋: GTSRB (German Traffic Sign Recognition Benchmark)
 
 사용 모델: LeNet, VGG16 등
+```
 
-python
-코드 복사
+
 # GTSRB 데이터 기반 CNN 예시
 prediction = traffic_sign_model.predict(processed_image)
 label = class_labels[np.argmax(prediction)]
