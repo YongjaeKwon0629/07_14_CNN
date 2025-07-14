@@ -90,3 +90,26 @@ CNN이 직접 조향각(Steering Angle)을 예측하는 시스템 개발
 ### 4.3 Mobileye
 Intel이 인수한 Mobileye는 CNN 기반의 비전 모듈로 고해상도 맵핑 및 객체 인식 수행
 
+## 5. 주요 이슈 및 과제
+
+| 이슈            | 설명                                           |
+| ------------- | -------------------------------------------- |
+| **경량화 문제**    | 차량 내 실시간 추론을 위해 CNN 모델의 경량화가 필요              |
+| **데이터 다양성**   | 다양한 날씨, 시간대, 도로 환경에서의 일반화가 요구됨               |
+| **신뢰성 확보**    | 안전이 최우선이므로 CNN의 오탐, 미탐률 최소화 필요               |
+| **AI 해석 가능성** | CNN의 블랙박스 특성 해결 위한 XAI(Explainable AI) 연구 활발 |
+
+## 6. 결론
+CNN은 자율주행 기술의 시각 인지 분야에서 핵심적인 역할을 수행하고 있으며, 지속적인 연구를 통해 정확도 향상, 실시간성 확보, 신뢰성 개선 등이 이루어지고 있다. 향후에는 멀티모달 센서 융합, Edge AI, Federated Learning 등의 기술과 함께 발전해 나갈 것으로 기대된다.
+
+## 7. 참고 문헌
+
+-  Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet Classification with Deep Convolutional Neural Networks.
+
+-  He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep Residual Learning for Image Recognition.
+
+-  Redmon, J., & Farhadi, A. (2018). YOLOv3: An Incremental Improvement.
+
+-  Pan, X., Shi, J., Luo, P., Wang, X., & Tang, X. (2018). Spatial As Deep: Spatial CNN for Traffic Scene Understanding.
+
+-  German Traffic Sign Recognition Benchmark (GTSRB) dataset: https://benchmark.ini.rub.de/
