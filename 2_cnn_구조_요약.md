@@ -9,21 +9,21 @@ CNN은 여러 계층(Layer)들을 쌓아서 구성되며, 각 계층은 이미�
 
 ### 📊 전체 구조 요약
 
-[입력 이미지]
-↓
-[Convolution Layer] → [ReLU]
-↓
-[Pooling Layer]
-↓
-[Convolution Layer] → [ReLU]
-↓
-[Pooling Layer]
-↓
-[Flatten]
-↓
-[Fully Connected Layer (Dense)]
-↓
-[Softmax (분류 결과)]
+[입력 이미지]  
+↓  
+[Convolution Layer] → [ReLU]  
+↓  
+[Pooling Layer]  
+↓  
+[Convolution Layer] → [ReLU]  
+↓  
+[Pooling Layer]  
+↓  
+[Flatten]  
+↓  
+[Fully Connected Layer (Dense)]  
+↓  
+[Softmax (분류 결과)]  
 
 이 흐름을 통해 CNN은 **단순한 모양 → 윤곽선 → 복잡한 형태 → 최종 분류**로 점점 더 고차원적인 특징(feature)을 추출하게 됩니다.
 
